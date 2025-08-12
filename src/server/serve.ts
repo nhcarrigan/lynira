@@ -56,6 +56,12 @@ export const instantiateServer = (lynira: Lynira): void => {
       response.redirect("https://cdn.nhcarrigan.com/favicon/favicon.ico");
     });
 
+    server.get("/robots.txt", (_request, response) => {
+      response.header("Content-Type", "text/plain");
+      // Allow everything
+      response.send("User-agent: *\nDisallow:");
+    });
+
     // WILDCARD: anything static must come before this route.
     // eslint-disable-next-line max-statements -- Big function due to multiple routes.
     server.get("*", async(request, response) => {

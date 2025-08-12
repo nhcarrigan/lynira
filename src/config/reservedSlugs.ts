@@ -9,4 +9,6 @@ export const reservedSlugs = [
   "unsub",
   "overlimit",
   "404",
+  "favicon.ico",
+  "robots.txt",
 ];
