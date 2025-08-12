@@ -1,6 +1,6 @@
 {
   "name": "lynira",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Link shortening service managed via a Discord bot",
   "main": "index.js",
   "type": "module",
