@@ -1,0 +1,31 @@
+{
+  "name": "lynira",
+  "version": "0.0.0",
+  "description": "Link shortening service managed via a Discord bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ./src --max-warnings 0",
+    "build": "prisma generate && tsc",
+    "start": "op run --env-file=./prod.env -- node ./prod/index.js",
+    "test": "echo 'No tests yet' && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@nhcarrigan/eslint-config": "5.2.0",
+    "@nhcarrigan/typescript-config": "4.0.0",
+    "@types/node": "24.2.1",
+    "eslint": "9.33.0",
+    "prisma": "6.13.0",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "@nhcarrigan/logger": "1.0.0",
+    "@prisma/client": "6.13.0",
+    "discord.js": "14.21.0",
+    "fastify": "5.5.0"
+  }
+}
