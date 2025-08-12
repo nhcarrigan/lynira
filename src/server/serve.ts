@@ -108,12 +108,12 @@ export const instantiateServer = (lynira: Lynira): void => {
       }
     });
 
-    server.listen({ port: 5033 }, (actualError) => {
+    server.listen({ port: 5044 }, (actualError) => {
       if (actualError) {
         void logger.error("instantiate server", actualError);
         return;
       }
-      void logger.log("debug", "Server listening on port 5033.");
+      void logger.log("debug", "Server listening on port 5044.");
     });
   } catch (actualError) {
     if (actualError instanceof Error) {
