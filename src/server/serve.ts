@@ -52,6 +52,10 @@ export const instantiateServer = (lynira: Lynira): void => {
       response.send(fourOhFour);
     });
 
+    server.get("/favicon.ico", (_request, response) => {
+      response.redirect("https://cdn.nhcarrigan.com/favicon/favicon.ico");
+    });
+
     // WILDCARD: anything static must come before this route.
     // eslint-disable-next-line max-statements -- Big function due to multiple routes.
     server.get("*", async(request, response) => {
