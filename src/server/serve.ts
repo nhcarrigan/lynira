@@ -75,12 +75,10 @@ export const instantiateServer = (lynira: Lynira): void => {
         });
 
         if (exists === null) {
-          void logger.log("debug", `Link with slug "${slug}" does not exist.`);
           return await response.redirect("/404");
         }
 
         if (exists.deleted) {
-          void logger.log("debug", `Link with slug "${slug}" has been deleted.`);
           return await response.redirect("/404");
         }
 
