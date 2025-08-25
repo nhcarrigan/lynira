@@ -16,7 +16,7 @@ export const unsub = `<!DOCTYPE html>
   <body>
     <main>
     <h1>Oopsie!</h1>
-    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira.png" width="250" alt="Lynira" />
+    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira-full.png" width="250" alt="Lynira" />
     <section>
       <p>It looks like the user who created this link is no longer subscribed to our service! Please let them know that they will need to resubscribe before this URL works!</p>
     </section>

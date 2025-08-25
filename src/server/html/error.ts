@@ -16,7 +16,7 @@ export const error = `<!DOCTYPE html>
   <body>
     <main>
     <h1>Oh dear!</h1>
-    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira.png" width="250" alt="Lynira" />
+    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira-full.png" width="250" alt="Lynira" />
     <section>
       <p>Something went wrong while trying to redirect you! Please try again later.</p>
     </section>

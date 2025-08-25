@@ -16,7 +16,7 @@ export const overlimit = `<!DOCTYPE html>
   <body>
     <main>
     <h1>Oopsie!</h1>
-    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira.png" width="250" alt="Lynira" />
+    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira-full.png" width="250" alt="Lynira" />
     <section>
       <p>It looks like the user who created this link has too many short URLs. They will need to delete some before this link works.</p>
     </section>

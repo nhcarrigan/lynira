@@ -16,7 +16,7 @@ export const fourOhFour = `<!DOCTYPE html>
   <body>
     <main>
     <h1>Oh no!</h1>
-    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira.png" width="250" alt="Lynira" />
+    <img src="https://cdn.nhcarrigan.com/new-avatars/lynira-full.png" width="250" alt="Lynira" />
     <section>
       <p>It looks like that link is no longer registered! You should ask the person who shared it with you for an updated URL.</p>
     </section>
