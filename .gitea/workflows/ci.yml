@@ -15,24 +15,32 @@ jobs:
       - name: Checkout Source Files
         uses: actions/checkout@v4
 
-      - name: Use Node.js v24
+      - name: Use Node.js v22
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 10
 
+      - name: Ensure Dependencies are Pinned
+        uses: naomi-lgbt/dependency-pin-check@v2.0.0
+        with:
+          language: javascript
+          dev- dependencies: true
+          peer-dependencies: true
+          optional-dependencies: true
+
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Verify Build
-        run: pnpm run build
-
       - name: Lint Source Files
         run: pnpm run lint
+
+      - name: Verify Build
+        run: pnpm run build
 
       - name: Run Tests
         run: pnpm run test
